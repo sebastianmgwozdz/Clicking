@@ -5,13 +5,14 @@ import java.awt.event.*;
 
 import javax.swing.*;
 
-public class Main {
+public class ClickingApp {
 
 	public static void main(String[] args) {
-		initializeMenu();
+		ClickingApp game = new ClickingApp();
+		game.initialize();
 	}
 	
-	public static void initializeMenu() {
+	public void initialize() {
 		JFrame menuFrame = new JFrame("Menu");
 		JPanel pane = new JPanel();
 		setupPanel(pane, menuFrame);
@@ -23,7 +24,7 @@ public class Main {
 		menuFrame.setLocation(dim.width / 2 - menuFrame.getSize().width / 2, dim.height / 2 - menuFrame.getSize().height / 2);
 	}
 	
-	private static void setupPanel(JPanel pane, JFrame menu) {
+	private void setupPanel(JPanel pane, JFrame menu) {
 		pane.setPreferredSize(new Dimension(1000, 650));
 		pane.setLayout(new GridBagLayout());
 		ReactionTest rt = new ReactionTest(menu);
@@ -32,7 +33,7 @@ public class Main {
 		pane.add(getButton(at, "Test your mouse accuracy!"));
 	}
 	
-	public static JButton getButton(Game g, String label) {
+	public JButton getButton(Game g, String label) {
 		JButton button = new JButton(label);
 		
 		button.addActionListener(new ActionListener() {

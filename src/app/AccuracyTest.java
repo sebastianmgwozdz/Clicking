@@ -135,7 +135,6 @@ public class AccuracyTest implements Game {
 			
 			button.setPreferredSize(new Dimension(75, 75));
 			
-			
 			newContentPane.add(button);
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -144,6 +143,5 @@ public class AccuracyTest implements Game {
 		menu.setPreferredSize(new Dimension(500, 500));
 		menu.pack();
 		menu.setVisible(true);  
-
 	}
 }

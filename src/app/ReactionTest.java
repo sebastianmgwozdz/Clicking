@@ -63,6 +63,7 @@ public class ReactionTest implements Game {
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
+		
 		button.setBackground(Color.green);
 		button.setEnabled(true);
 		startTime = System.currentTimeMillis();
