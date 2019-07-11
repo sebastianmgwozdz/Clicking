@@ -8,6 +8,7 @@ import java.io.*;
 import javax.imageio.ImageIO;
 import javax.swing.*;
 
+// Build option menu for accuracy game
 public class Option extends JPanel implements ActionListener {
 	private static String smallString = "Small";
 	private static String mediumString = "Medium";
@@ -61,16 +62,19 @@ public class Option extends JPanel implements ActionListener {
  
         add(radioPanel);
         
+        // Add spacing between labels, pictures, and exit button
         GridBagConstraints gc = new GridBagConstraints();
 		gc.insets = new Insets(0, 10, 0, 10);
         add(picture, gc);
     }
     
+    // Allow picture to change when different options are selected
     public void actionPerformed(ActionEvent e) {
         picture.setIcon(new ImageIcon("images/" + e.getActionCommand() + ".png"));
         selectedItem = e.getActionCommand();
     }
     
+    // Return currently selected option
     public String getSelectedItem() {
     	return selectedItem;
     }

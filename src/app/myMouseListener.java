@@ -3,6 +3,7 @@ package app;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
+// Track mouse clicks during accuracy game
 class myMouseListener implements MouseListener {
 	private int clickCount;
 	

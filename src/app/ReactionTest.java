@@ -6,7 +6,7 @@ import java.util.concurrent.ThreadLocalRandom;
 
 import javax.swing.*;
 
-// Tests reaction times, user must click the button once it changes color to green.
+// Test reaction times, user must click the button once it changes color to green.
 public class ReactionTest implements Game {
 	private long startTime;
 	private JButton button;
@@ -45,7 +45,7 @@ public class ReactionTest implements Game {
 		    	 long reactionTime = System.currentTimeMillis() - startTime;
 		         JOptionPane.showMessageDialog(currentFrame, "Reaction time: " + reactionTime + " ms");
 		         
-		         // Forces window close to allow for next round
+		         // Force window close to allow for next round
 		         currentFrame.dispatchEvent(new WindowEvent(currentFrame, WindowEvent.WINDOW_CLOSING));
 		         menuFrame.setVisible(true);
 		     }
