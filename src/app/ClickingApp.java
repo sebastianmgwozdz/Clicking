@@ -6,7 +6,6 @@ import java.awt.event.*;
 import javax.swing.*;
 
 public class ClickingApp {
-	// TODO: Add readme and gifs to github 
 	
 	public static void main(String[] args) {
 		ClickingApp game = new ClickingApp();
