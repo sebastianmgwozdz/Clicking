@@ -162,6 +162,8 @@ public class AccuracyTest implements Game {
 		
 		menu.setPreferredSize(new Dimension(500, 500));
 		menu.pack();
-		menu.setVisible(true);  
+		menu.setVisible(true);
+		Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
+		menu.setLocation(dim.width / 2 - menu.getSize().width / 2, dim.height / 2 - menu.getSize().height / 2);
 	}
 }
